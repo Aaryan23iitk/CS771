@@ -19,7 +19,7 @@ from sklearn.metrics.pairwise import polynomial_kernel
 def my_kernel(X1, Z1, X2, Z2):
     
     K_z = polynomial_kernel(
-        Z1, Z2, degree = 4, coef0 = 27.5, gamma = 1.0,
+        Z1, Z2, degree = 2, coef0 = 20, gamma = 1.0,
     )
 
     K_x = X1 @ X2.T
